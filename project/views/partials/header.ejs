@@ -1,0 +1,56 @@
+<div class="alert">
+    Note: Due to a large number of orders, please expect 1~2 days delay in delivery.
+</div>
+
+<div class="social-bar">
+    <div class="social-icons">
+        <div>
+            <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+        </div>
+        <div>
+            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+        </div>
+        <div>
+            <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+        </div>
+    </div>
+    <% if (typeof username !== 'undefined' && username) { %>
+        <div class="user-greeting">
+            Welcome, <%= username %>!
+        </div>
+    <% } %>
+    <a class="help-link" href="mailto:info@techcraft.pk">Need help? info@techcraft.pk</a>
+</div>
+
+<header>
+    <div class="logo">
+        <img src="/images/12.PNG" alt="TechCraft Logo">
+    </div>
+    <div class="header-content">
+        <h1>TechCraft</h1>
+        <h3>Crafting Your Digital Masterpiece, One Component at a Time!</h3>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="button">Search</button>
+    </div>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/product">Products</a>
+    <a href="#">PC builder</a>
+    <a href="/contactus">Contact Us</a>
+    <a href="/reviewus">Review Us</a>
+    <a href="/info">About Us</a>
+    <a href="/products">Product Details</a>
+    <% if (user) { %>
+        <a href="/logout" class="logout-button">Logout</a>
+    <% } else { %>
+        <a href="/login" class="login-button">Login</a>
+    <% } %>
+
+
+    <a href="/cart">Cart</a>
+    <a href="/search">Search</a>
+</nav>

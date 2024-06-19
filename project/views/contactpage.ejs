@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+    <h1 class="heading">Get in touch</h1>
+
+    <div class="parent">
+        <div class="left">
+            <h5>Send Us a Message</h5>
+            <span>Have something on your mind? We'd love to hear from you! Use the form below to send us a message, and our team will respond promptly. Your feedback is important to us, and we're here to help with any questions or concerns.</span>
+            <form id="contactForm" class="pads">
+                <div>
+                    <input type="text" name="firstName" placeholder="Your First Name" required> 
+                    <input type="text" name="lastName" placeholder="Your Last Name" required>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Your Email address" required> 
+                    <input type="text" name="phone" placeholder="Your Phone Number" required>
+                </div>
+                <div>
+                    <textarea name="comments" placeholder="Your comments..." required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+  
+
+        <div class="right">
+
+            <h4>Call Us</h5>
+
+            <span>Need assistance or prefer to speak with us directly? Feel free to give us a call! Our team is here to
+                help
+                you with any inquiries or support you may need.</span>
+            <p><i class="material-icons icon pads" style="color: red; font-size: 40px;">phone</i> Call: (+92) 334 9920239</p>
+
+            <h4 class="pads">Visit Us</h5>
+
+            <span>Planning to drop by? We'd love to welcome you to our location! Find us at the following
+                address:</span>
+
+            <p><i class="material-icons icon pads" style="color: red; font-size: 40px;">home</i> Lahore, Pakistan</p>
+        </div>
+    </div>
+
+    <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13617.602440387187!2d74.25587662178178!3d31.430636397394327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190107e0e2e73b%3A0x74167e1853d7e6f2!2sWAPDA%20Town%20Wapda%20Town%20Phase%201%20WAPDA%20Town%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1710010723032!5m2!1sen!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="parent2">
+        <div class="left2">
+            <h5>FAQ</h5>
+            <h1>Frequently</h1>
+            <h1>asked</h1>
+            <h1>questions.</h1>
+        </div>
+
+        <div class="right2">
+            <h3> Frequently Asked Questions (FAQ)</h3>
+
+            <span class="pads">Got questions? We've got answers! Explore our Frequently Asked Questions to find the information you
+                need.
+                If you don't see what you're looking for, feel free to reach out to our team for personalized
+                assistance.</span>
+
+            <div class="faq-container pads">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <span>1. Do you offer free shipping?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide free shipping on orders above $50. Standard shipping rates apply for orders
+                            below
+                            that amount.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <span>2. How can I track my order?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Once your order is shipped, you will receive a tracking number via email. You can use this
+                            number to
+                            track your order on our website.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <span>3. What payment methods do you accept?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept various payment methods, including credit/debit cards, PayPal, and online banking.
+                            You can
+                            find the complete list during the checkout process.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <span>4. Can I return a product?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we have a hassle-free return policy. If you're not satisfied with your purchase, you can
+                            return
+                            the product within 30 days for a full refund or exchange.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+                function toggleAnswer(question) {
+                    const answer = question.nextElementSibling;
+                    question.classList.toggle('open');
+                    answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+                }
+            </script>
+        </div>
+    </div>
+
+
+    <%- include('./partials/footer.ejs') %>
+
+
+
+</body>
+<script>
+    $(document).ready(function() {
+        $("#contactForm").submit(function(event) {
+            var isValid = true;
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            var phoneReg = /^\d{11}$/;
+    
+            // Check if the first name field is not empty
+            if ($.trim($("[name='firstName']").val()) === '') {
+                alert('Please enter your first name.');
+                isValid = false;
+            }
+            
+            // Check if the email field is not empty and is a valid email address
+            if ($.trim($("[name='email']").val()) === '' || !emailReg.test($("[name='email']").val())) {
+                alert('Please enter a valid email address.');
+                isValid = false;
+            }
+            
+            // Check if the phone field is not empty, is numeric, and is exactly 11 digits
+            var phoneValue = $.trim($("[name='phone']").val());
+            if (phoneValue === '' || !phoneReg.test(phoneValue)) {
+                alert('Please enter a valid phone number with exactly 11 digits.');
+                isValid = false;
+            }
+            
+            // Check if the message field is not empty
+            if ($.trim($("[name='comments']").val()) === '') {
+                alert('Please enter your message.');
+                isValid = false;
+            }
+            
+            // If any field is not valid, prevent the form from being submitted
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    });
+    </script>
+
+</html>

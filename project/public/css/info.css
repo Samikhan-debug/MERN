@@ -1,0 +1,56 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.infobar {
+    width: 30%;
+    background-color: #1A1919;
+    padding: 20px;
+
+}
+
+.infobar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.infobar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+.infobar ul li a:hover {
+    background-color: rgb(201, 44, 44)
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+
+.text {
+    margin-top: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.container{
+    background-color: white;
+    padding: 30px;
+}

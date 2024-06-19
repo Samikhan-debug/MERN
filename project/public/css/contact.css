@@ -1,0 +1,159 @@
+.heading{
+    font-size: 42px;
+    text-align: left;
+    padding:30px;
+    color: white;
+    margin-left: 08px;
+}
+
+body{
+    background-color: #1a1919;
+    color: white;
+}
+
+.parent{
+    display: flex;
+}
+.left{
+    width: 45%;
+    padding: 40px;
+    border-right: 2px solid red ;
+}
+.right{
+    width: 40%;
+    padding: 20px;
+    padding-left: 8%;
+    
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid red;
+    outline: none;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    background-color: #1a1919;
+    color: white;
+  }
+
+input::placeholder {
+    color: #777;
+}
+
+textarea {
+    border: none;
+    border-bottom: 2px solid red;
+    outline: none;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    background-color: #1a1919;
+    color: white;
+  }
+
+  textarea::placeholder {
+    color: #777;
+  }
+
+  button {
+    padding: 10px 20px;
+
+    margin: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+
+
+.map {
+    width: 60%; /* Adjust the width as needed */
+    height: 350px; /* Adjust the height as needed */
+    border: 0;
+    margin-top: 40px;
+    padding-left: 20%;
+    margin-left: 7%;
+
+}
+.parent2{
+    display: flex;
+    padding: 5%;
+}
+.left2{
+    width: 30%;
+}
+.right2{
+    width: 40%
+}
+
+.faq-container {
+    max-width: 600px;
+    width: 100%;
+}
+
+.faq-item {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container {
+    max-width: 600px;
+    width: 100%;
+}
+
+.faq-item {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.faq-question::after {
+    content: '\002B';
+    font-size: 24px;
+    color: red;
+}
+
+.faq-question.open::after {
+    content: '\2212'; /* Unicode character for minus sign */
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+
+ .pads{
+    padding-top: 20px;
+ }
